@@ -10,6 +10,7 @@
 			<%= link_to tag.name, tag_path(tag) %>
 		<% end %>
 	</p>
+	<p><%= image_tag @article.image.url %></p>
 	<p><%= @article.body %></p>
 	<p><%= link_to "delete", article_path(@article), data: {confirm: "Really delete the article?"}, method: :delete %></p>
 	<p><%= link_to "edit", edit_article_path(@article) %></p>
